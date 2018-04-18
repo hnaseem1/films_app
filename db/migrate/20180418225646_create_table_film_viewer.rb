@@ -1,0 +1,8 @@
+class CreateTableFilmViewer < ActiveRecord::Migration[5.2]
+  def change
+    create_table :table_film_viewers do |t|
+      t.integer :film_id
+      t.integer :viewer_id
+    end
+  end
+end
